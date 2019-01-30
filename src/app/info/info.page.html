@@ -1,0 +1,25 @@
+<ion-header color="success">
+  <ion-toolbar color="success">
+    <ion-buttons slot="end">
+        <ion-button color="dark"> <fa-icon [icon]="['fas','qrcode']" size="2x"></fa-icon> </ion-button>
+      </ion-buttons>
+    <ion-title> Informações </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item (click)="AboutProject()" details-push>
+          <ion-label> Sobre o Projeto </ion-label>
+          <fa-icon [icon]="['fas','angle-right']" slot='end'></fa-icon>
+        </ion-item >
+        <ion-item (click)="AboutApp()">
+            <fa-icon [icon]="['fas','angle-right']" slot='end'></fa-icon>
+          <ion-label> Sobre o Aplicativo </ion-label>
+        </ion-item>
+        <ion-item (click)="Developers()">
+            <fa-icon [icon]="['fas','angle-right']" slot='end'></fa-icon>
+          <ion-label> Desenvolvedores </ion-label>
+        </ion-item>
+      </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+npm i @fortawesome/angular-fontawesome<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="treeList">
+      <fa-icon [icon]="['fas','tree']" size="2x"></fa-icon>
+      <!--<ion-icon name="leaf"></ion-icon>-->
+      <ion-label>Árvores</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Map">
+        <fa-icon [icon]="['fas','map-marked-alt']" size="2x"></fa-icon>
+      <ion-label>Mapa</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Glossary">
+        <fa-icon [icon]="['fas','book-open']" size="2x"></fa-icon>
+      <ion-label>Glossário</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Info">
+        <fa-icon [icon]="['fas','info-circle']" size="2x"></fa-icon>
+      <ion-label>Sobre</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>
