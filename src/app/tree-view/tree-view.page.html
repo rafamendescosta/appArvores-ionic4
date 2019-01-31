@@ -1,9 +1,100 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>treeView</ion-title>
+  <ion-toolbar color="success"> 
+    <ion-title> Nome da Árvore </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <ion-slides  class="image-slider TreeSlider" pager="true" loop="true" color="success"> 
+      <ion-slide *ngFor="let img of images">
+        <img src="assets/img/examples/{{img}}" class="thumb-img">
+      </ion-slide>
+    </ion-slides>
+    <div class="whiteSpace"></div>
+    <div class='conteudo'>
+      <ion-grid>
+         <ion-row> 
+            <ion-col>
+              <h5 class="titulo family"><fa-icon [icon]="['fas','seedling']" class="seedIcon"></fa-icon> Familia</h5>
+            </ion-col>
+            <ion-col>
+              <p class="atributo"> Nome da familia </p>
+              </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo"> <fa-icon [icon]="['fas','atom']" class="atomIcon"></fa-icon> Nome cientifico </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> <i>nome cientifico </i> </p>
+              </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo"><fa-icon [icon]="['fas','hand-holding-heart']" class="handHeartIcon"></fa-icon> Nome popular </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> nome popular </p>
+            </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo" ><fa-icon [icon]="['far','clock']" class="clockIcon"></fa-icon> Hábito </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> habito </p>
+            </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo"><fa-icon [icon]="['fas','leaf']"class="leafIcon"></fa-icon> Época Floração </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> sei lá </p>
+            </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo"> <fa-icon [icon]="['fas','apple-alt']" class="appleIcon"></fa-icon> Época frutificação </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> tbm não sei </p>
+            </ion-col>
+         </ion-row>
+         <ion-row> 
+            <ion-col>
+                <h6  class="titulo dispersao"> <fa-icon [icon]="['fas','wind']" class="windIcon"></fa-icon> Síndrome de dispersão </h6>
+            </ion-col>
+            <ion-col>
+                <p class="atributo"> tbm não sei </p>
+            </ion-col>
+         </ion-row>
+         <ion-row class="rowRedlist">
+           <ion-col>
+             <h6  class="titulo"> Classificação na lista vermelha <fa-icon [icon]="['fas','exclamation-triangle']" class="iconeDanger"></fa-icon></h6>
+            <img src="../../assets/img/redlist.png" class="redListImage" alt="">
+           </ion-col>
+         </ion-row>
+         <ion-row >
+           <ion-col>
+            <h6  class="titulo"> Descrição <fa-icon [icon]="['far','comment']" ></fa-icon></h6>
+              <p class="texto">  Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumvLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum </p>
+           </ion-col>
+         </ion-row>
+      </ion-grid>
 
+      </div>
+      <div class="mapDiv">
+          <h6  class="titulo"> <fa-icon [icon]="['fas','map-marked-alt']" class="mapIcon"></fa-icon>  Locais que podem ser encontradas  </h6>
+          <div class="map">
+            <img src="../../assets/img/map.png" alt="">
+          </div>
+      </div>       
+    
 </ion-content>

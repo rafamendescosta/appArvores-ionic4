@@ -1,0 +1,107 @@
+
+ion-content{
+    --ion-background-color:#6EFAF8;
+    --padding-bottom: 50px;
+}
+
+ion-row{
+    border-bottom: 1px solid black;
+}
+
+ion-grid{
+    margin-top: -30px;
+}
+
+.rowRedlist{
+    padding-bottom: 20px;
+}
+
+.thumb-img{
+    width: 100%; 
+    height: 100%; 
+    margin: 0px;
+}
+.titulo{
+    font-family: PermanentMarker;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.ble{
+    padding: 0px !important;
+    margin-left: -10px !important;
+    font-size: 25px !important;
+}
+
+.atributo{
+    font-family: Rancho; 
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.TreeSlider{
+    height: 200px;
+    padding: 0px;
+}
+
+.texto{
+    font-family: Rancho; 
+    font-size: 24px;
+}
+
+.conteudo{
+    margin: 20px;
+    color: black;
+}
+
+.dispersao{
+    font-size: 20px !important;
+}
+
+/*  MUDANDO AS CORES DOS ÍCONES */
+
+.iconeDanger{
+    color: red !important;
+}
+
+.handHeartIcon{
+    color: orange !important;
+}
+
+.clockIcon{
+    color: #AD1FF1 !important;
+}
+
+.leafIcon{
+    color: green !important;
+}
+
+.atomIcon{
+    color: darkblue !important;
+}
+
+.appleIcon{
+    color: #FF3B58 !important;
+}
+
+.seedIcon{
+    color: #2EDD3C !important;
+}
+
+.windIcon{
+    color: #33D3A3 !important;
+    font-size: 30px !important;
+}
+
+.mapIcon{
+    color: #CCC888 !important;
+}
+
+/* Estilo do mapa */
+
+.map{
+    width: 100%; 
+    height: 300px;
+    border: 2px solid red;
+}

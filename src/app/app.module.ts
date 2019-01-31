@@ -21,8 +21,12 @@ library.add(fas, far, fab);
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, 
-  FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    FontAwesomeModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
