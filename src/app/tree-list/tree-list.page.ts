@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Tree, TreeService } from './../services/tree.service';
+
 
 @Component({
   selector: 'app-tree-list',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreeListPage implements OnInit {
 
-  constructor() { }
+  trees: Tree[];
+  urlHabito: string;
+
+  constructor(private treeService: TreeService) { }
 
   ngOnInit() {
+    this.treeService.getTrees().subscribe(res => {
+      this.trees = res;
+    });
   }
 
 }
